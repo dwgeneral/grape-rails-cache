@@ -60,7 +60,7 @@ module Grape
             cache_store_expire_time = (opts[:cache_store_expires_in] || opts[:expires_in] || default_expire_time).to_i
             if cache_store_expire_time <= 0
               puts "------------- cache store expire time <= 0 ---------------"
-              block.call.to_s.to_json
+              block.call.to_json
             else
               puts "------------- else ---------------"
              # ::Rails.cache.fetch(cache_key, raw: true, expires_in: cache_store_expire_time) do
