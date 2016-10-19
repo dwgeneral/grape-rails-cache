@@ -42,6 +42,9 @@ module Grape
           end
 
           def cache(opts = {}, &block)
+            puts "*" * 30
+            puts opts
+            puts "*" * 30
             # HTTP Cache
             cache_key = opts[:key]
 
