@@ -1,5 +1,5 @@
 require "grape/rails/cache/version"
-require "grape/rails/cache/formatter"
+# require "grape/rails/cache/formatter"
 
 module Grape
   module Rails
@@ -7,7 +7,7 @@ module Grape
       extend ActiveSupport::Concern
 
       included do
-        formatter :json, Grape::Rails::Cache::JsonFormatter
+        # formatter :json, Grape::Rails::Cache::JsonFormatter
 
         helpers do
           def compare_etag(etag)
