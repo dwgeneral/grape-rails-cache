@@ -63,9 +63,9 @@ module Grape
             else
               puts "------------- else ---------------"
              # ::Rails.cache.fetch(cache_key, raw: true, expires_in: cache_store_expire_time) do
-              ::Rails.cache.fetch(cache_key, expires_in: cache_store_expire_time) do
-                block.call
-              end
+#               ::Rails.cache.fetch(cache_key, expires_in: cache_store_expire_time) do
+#                 block.call
+#               end
             end
           end
         end
